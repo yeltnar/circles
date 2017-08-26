@@ -1,0 +1,56 @@
+<HTML>
+	<head>
+		<script type="text/javascript" src="drawCircle.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+	</head>
+		
+	<body id="body" bgcolor="#000000" ontouch="openSettings()" >
+		<div id="settingsContainer" style="height:0px;">
+			<img id="settingsContainerXButton" src="x.png" onclick="hideSettings()" style="height:1.5em; padding:.1em;" ></img>
+			<div id="settings">
+				<div class="smallSettingsHolder">
+					<div>
+						levelOfAlphaReduction
+						<textarea id="levelOfAlphaReductionSetting"></textarea>
+					</div>
+					<div>
+						maxNumberOfElements<textarea id="maxNumberOfElementsSetting"></textarea>
+					</div>
+					<div>
+						useSquares
+						<input type="checkbox" id="useSquaresSetting"></input>
+					</div>
+					<div>
+						useCircles
+						<input type="checkbox" id="useCirclesSetting"></input>
+					</div>
+				</div>
+				<div class="smallSettingsHolder">
+					<div>
+						likelyhoodOfSquare
+						<textarea id="likelyhoodOfSquareSetting"></textarea>
+					</div>
+					<div>
+						likelyhoodOfHiding
+						<textarea id="likelyhoodOfHidingSetting"></textarea>
+					</div>
+					<div>
+						transitionSpeed
+						<textarea id="transitionSpeedSetting"></textarea>
+					</div>
+					<div>
+						stillLength
+						<textarea id="stillLengthSetting"></textarea>
+					</div>
+					<div>
+						<button onClick="saveSettings()">save</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</HTML>
